@@ -17,11 +17,14 @@ The following is the project structure, and I will explain with the typical comp
 
 Following the basic component of a compiler/interpreter and the consideration of software architecture, I will form the project folder as follows.
 
- - component
-	 - lexer
-	 - parser
-	 - interpreter
+ - component (this is the simple component, you can also find other implementations of each components)
+	 - lexer.py
+	 - parser.py
+	 - interpreter.py
  - context: used for traceback the function errors
+ - lexer
+ - parser
+ - interpreter
  - errors
  - utils
  - grammar.txt
