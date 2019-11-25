@@ -1,21 +1,33 @@
-MIT License
+# Welcome to Joelang!!!
 
-Copyright (c) 2019 David Callanan
+Hi! here is **"joelang"**, which is a simple ***interpreter language*** written in python. If you want to play with compiler or interpreter, I think this is a good place to start your journey. Once you have understand the project, you can create your own component such as lexer, parser, you own interpreter and maybe your customised symbol set by modifying corresponding files in different project folder. 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The object of the project is to support basic syntax and expressions like **variable assignment** , **arithmetic operation**, **comparison-if-else statement**, **loop operation** and **function call** usage within the language **joelang**. 
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+And later probably include some **objective oriented programming/functional programming** features.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+
+# Project Structure
+
+The following is the project structure, and I will explain with the typical compiler/interpreter along with the project folder. Usually a compiler/interpreter consist with:
+
+ 1. lexer: convert the input to tokens, which associate each element in the input with its predefined types, like NLP tokenizer for those of you come from AI.
+ 2. parser: parse the token-list into AST, syntax tree based on the several predefined grammar rules.
+ 3. interpreter(evaluate): evaluate the the AST to get the result of it.
+
+Following the basic component of a compiler/interpreter and the consideration of software architecture, I will form the project folder as follows.
+
+ - component
+	 - lexer
+	 - parser
+	 - interpreter
+ - context: used for traceback the function errors
+ - errors
+ - utils
+ - grammar.txt
+ - position: keep track the position of the give input programme
+ - nodes: compiler basically is consisted of tree of nodes.
+ - values: a collection of different values types, float|int, variable
+ - tokens
+ - shell.py (function entry)
+
