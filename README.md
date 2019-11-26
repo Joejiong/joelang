@@ -43,5 +43,5 @@ Following the basic component of a compiler/interpreter and the consideration of
  - Source-level debugger
  - Miscellanea (All the other goodness not mentioned above :)
  - tokens
- - shell.py (function entry)
+ - Symbol table for procedure call/ scope for object oriented programming.
 
