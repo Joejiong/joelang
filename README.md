@@ -27,7 +27,7 @@ Following the basic component of a compiler/interpreter and the consideration of
  - interpreter
  - errors
  - utils
- - grammar.txt
+ - grammar.txt: *grammar rules* to our recursive-descent parser 
  - position: keep track the position of the give input programme
  - nodes: compiler basically is consisted of tree of nodes.
  - values: a collection of different values types, float|int, variable
