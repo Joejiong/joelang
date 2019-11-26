@@ -31,6 +31,18 @@ Following the basic component of a compiler/interpreter and the consideration of
  - position: keep track the position of the give input programme
  - nodes: compiler basically is consisted of tree of nodes.
  - values: a collection of different values types, float|int, variable
+ 
+ # tranditional text book topics that covered 
+ 
+ - Nested procedures and functions
+ - Procedure and function calls
+ - Semantic analysis (type checking, making sure variables are declared before they are used, and basically checking if a  -program makes sense)
+ - Control flow elements (like IF statements)
+ - Aggregate data types (Records)
+ - More built-in types
+ - Source-level debugger
+ - Miscellanea (All the other goodness not mentioned above :)
+
  - tokens
  - shell.py (function entry)
 
