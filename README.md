@@ -18,9 +18,9 @@ The following is the project structure, and I will explain with the typical comp
 Following the basic component of a compiler/interpreter and the consideration of software architecture, I will form the project folder as follows.
 
  - component (this is the simple component, you can also find other implementations of each components)
-	 - lexer.py
-	 - parser.py
-	 - interpreter.py
+	 - lexer.py: transfer the programme file into token list with respective types.
+	 - parser.py: the parser transfer the tokens into astree nodes.
+	 - interpreter.py: implement the visitor pattern to do certain node operation in order to, e,g, evaluate the astree.
  - context: used for traceback the function errors
  - lexer
  - parser
