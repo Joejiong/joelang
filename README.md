@@ -32,7 +32,7 @@ Following the basic component of a compiler/interpreter and the consideration of
  - nodes: compiler basically is consisted of tree of nodes.
  - values: a collection of different values types, float|int, variable
  
- # tranditional text book topics that covered 
+ # Tranditional text book topics that covered 
  
  - Nested procedures and functions
  - Procedure and function calls
@@ -42,7 +42,6 @@ Following the basic component of a compiler/interpreter and the consideration of
  - More built-in types
  - Source-level debugger
  - Miscellanea (All the other goodness not mentioned above :)
-
  - tokens
  - shell.py (function entry)
 
