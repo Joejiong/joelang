@@ -1,8 +1,7 @@
-
 #######################################
 # INTERPRETER
 #######################################
-
+from joe_compiler.joe_compiler_repo.result_wrapper import RTResult
 class Interpreter:
   def visit(self, node, context):
     method_name = f'visit_{type(node).__name__}'

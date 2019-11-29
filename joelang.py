@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
-from strings_with_arrows import *
+from joe_compiler.joe_compiler_repo.utils.strings_with_arrows import *
 
 import string
 import os
 import math
+
+from joe_compiler.joe_compiler_repo.component.lexer import Lexer
+from joe_compiler.joe_compiler_repo.component.interpreter import Interpreter
+from joe_compiler.joe_compiler_repo.component.parser import Parser
+from joe_compiler.joe_compiler_repo.context import Context
 
 #######################################
 # CONSTANTS
