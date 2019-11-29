@@ -2,6 +2,7 @@
 #######################################
 # PARSER
 #######################################
+from joe_compiler.joe_compiler_repo.error import *
 
 class Parser:
   def __init__(self, tokens):
