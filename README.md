@@ -17,17 +17,31 @@ The following is the project structure, and I will explain with the typical comp
 
 Following the basic component of a compiler/interpreter and the consideration of software architecture, I will form the project folder as follows.
 
- - component
-	 - lexer
-	 - parser
-	 - interpreter
+ - component (this is the simple component, you can also find other implementations of each components)
+	 - lexer.py: transfer the programme file into token list with respective types.
+	 - parser.py: the parser transfer the tokens into astree nodes.
+	 - interpreter.py: implement the visitor pattern to do certain node operation in order to, e,g, evaluate the astree.
  - context: used for traceback the function errors
+ - lexer
+ - parser
+ - interpreter
  - errors
  - utils
- - grammar.txt
+ - grammar.txt: *grammar rules* to our recursive-descent parser 
  - position: keep track the position of the give input programme
  - nodes: compiler basically is consisted of tree of nodes.
  - values: a collection of different values types, float|int, variable
+ 
+ # Tranditional text book topics that covered 
+ 
+ - Nested procedures and functions
+ - Procedure and function calls
+ - Semantic analysis (type checking, making sure variables are declared before they are used, and basically checking if a  -program makes sense)
+ - Control flow elements (like IF statements)
+ - Aggregate data types (Records)
+ - More built-in types
+ - Source-level debugger
+ - Miscellanea (All the other goodness not mentioned above :)
  - tokens
- - shell.py (function entry)
+ - Symbol table for procedure call/ scope for object oriented programming.
 
